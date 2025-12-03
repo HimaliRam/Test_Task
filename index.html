@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard – Figma Dev Task</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Gilroy Font -->
+    <style>
+        @font-face {
+            font-family: 'Gilroy';
+            src: url('fonts/Gilroy-Regular.ttf') format('truetype');
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img src="icons/logo.svg" class="brand-logo">
+            <h2></h2>
+        </div>
+        <hr/>
+     
+        <div class="menu-wrapper">
+        <nav class="menu">
+            <a class="menu-item active"><img src="icons/home.svg"> Dashboard</a>
+            <a class="menu-item"><img src="icons/invoices.svg"> Invoices</a>
+            <a class="menu-item"><img src="icons/proposals.svg"> Proposals</a>
+            <a class="menu-item"><img src="icons/services.svg"> Services</a>
+            <a class="menu-item"><img src="icons/transactions.svg"> Transaction</a>
+            <a class="menu-item"><img src="icons/Projects.svg"> Projects</a>
+            <a class="menu-item"><img src="icons/customers.svg"> Customers</a>
+        </nav>
+        </div>
+
+        <div class="bottom-actions">
+            <a class="menu-item"><img src="icons/settings.svg"> Settings</a>
+            <a class="menu-item"><img src="icons/logout.svg"> Log Out</a>
+        </div>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Topbar -->
+        
+        <div class="main-wrapper">
+
+    <!-- TOP BLUE HEADER -->
+    <header class="top-header">
+        <div class="header-left">
+            <h1>Hi, Welcome back <span>Robert!</span></h1>
+        </div>
+
+        <div class="header-right">
+            <div class="search-box">
+                <img src="icons/search.svg" class="search-icon">
+                <input type="text" placeholder="Search..." />
+            </div>
+
+            <img src="icons/bell.svg" class="bell-icon">
+            <img src="assets/avatar.svg" class="profile-avatar">
+        </div>
+    </header>
+
+    <!-- FINANCE OVERVIEW TITLE -->
+    <h2 class="section-title">Finance Overview</h2>
+
+    <!-- SUMMARY CARDS -->
+    <div class="cards-row">
+        <div class="card">
+            <h3>$ 2,77,120</h3>
+            <p>Sales</p>
+            <img src="icons/card1.svg" class="card-icon">
+        </div>
+
+        <div class="card">
+            <h3>$ 60,100</h3>
+            <p>Expense</p>
+            <img src="icons/card2.svg" class="card-icon">
+        </div>
+
+        <div class="card">
+            <h3>$ 57,230</h3>
+            <p>Profit</p>
+            <img src="icons/card3.svg" class="card-icon">
+        </div>
+
+        <div class="card">
+            <h3>$ 1,60,124</h3>
+            <p>Income</p>
+            <img src="icons/card4.svg" class="card-icon">
+        </div>
+    </div>
+
+</div>
+
+
+        <!-- Project Table -->
+        <section class="table-section">
+            <div class="table-header">
+                <h3>Current Projects</h3>
+                <button class="create-btn">Create</button>
+            </div>
+
+            <table class="project-table">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Customer</th>
+                        <th>Sent Date</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Travel App Design</td>
+                        <td>Jacob Jones</td>
+                        <td>28 Oct 2022</td>
+                        <td>$ 240.90</td>
+                        <td><button class="sent">SENT</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>UX Research for Event management app</td>
+                        <td>Wade Warren</td>
+                        <td>18 Oct 2022</td>
+                        <td>$ 120.00</td>
+                        <td><button class="draft">DRAFT</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Redesign - Food Delivery app</td>
+                        <td>Annette Black</td>
+                        <td>15 Oct 2022</td>
+                        <td>$ 351.00</td>
+                        <td><button class="paid">PAID</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Web App - Online Learning</td>
+                        <td>Cameron Williamson</td>
+                        <td>15 Oct 2022</td>
+                        <td>$ 240.90</td>
+                        <td><button class="paid">PAID</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Railway web casestudy</td>
+                        <td>RObert Fox</td>
+                        <td>13 Oct 2022</td>
+                        <td>$ 153.00</td>
+                        <td><button class="sent">SENT</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Responsive web design</td>
+                        <td>Floyd Miles</td>
+                        <td>06 Oct 2022</td>
+                        <td>$ 140.90</td>
+                        <td><button class="rejected">REJECTED</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Music app design</td>
+                        <td>Theresa Webb</td>
+                        <td>04 Oct 2022</td>
+                        <td>$ 345.90</td>
+                        <td><button class="draft">DRAFT</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- Events Section -->
+    
+           
+
+           <div class="events-box">
+          <h3>Events</h3>
+
+    <div class="event-row">
+        <img src="assets/avatar1.svg" class="event-avatar">
+
+        <div class="event-info">
+            <h4>Wade Warren</h4>
+            <div class="event-meta">
+                <span class="emoji">🎂</span>
+                <span class="label">Birthday</span>
+                <span class="dot"></span>
+                <span class="date">Today</span>
+            </div>
+        </div>
+
+        <span class="event-badge wish">Wish</span>
+    </div>
+
+    <div class="event-row">
+        <img src="assets/avatar2.svg" class="event-avatar">
+
+        <div class="event-info">
+            <h4>Wade Warren</h4>
+            <div class="event-meta">
+                <span class="emoji">🎉</span>
+                <span class="label">Joining Us</span>
+                <span class="dot"></span>
+                <span class="date">Today</span>
+            </div>
+        </div>
+
+        <span class="event-badge congrats">Congratulations</span>
+    </div>
+    <div class="event-row">
+    <img src="assets/avatar3.svg" class="event-img">
+
+    <div class="event-info">
+        <h4>Wade Warren</h4>
+        <p><span class="emoji">💼</span> <span class="event-type">Work Anniversary</span> • <span class="date">7 September, 2022</span></p>
+    </div>
+
+    <!-- <button class="event-btn">View</button> -->
+</div>
+
+<div class="event-row">
+    <img src="assets/avatar4.svg" class="event-img">
+
+    <div class="event-info">
+        <h4>Wade Warren</h4>
+        <p><span class="emoji">💼</span> <span class="event-type">Work Anniversary</span> • <span class="date">7 September, 2022</span></p>
+    </div>
+
+    <!-- <button class="event-btn">View</button> -->
+</div>
+
+
+</div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
